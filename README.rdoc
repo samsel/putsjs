@@ -1,1 +1,27 @@
-= Currently under development!
+== PutsJS
+
+Add PutsJS to your Rails project to freely use 'puts' instead of typing the lengthy 'console.log' for logging to console in your coffescript.
+
+
+== Installation
+
+1. Add PutsJS to your Gemfile:
+
+    gem 'putsjs'
+
+2. Change directory to your Rails app root and Run bundle installer to install PutsJS:
+
+    bundle install
+
+
+== Usage
+
+In your coffescript files just use puts followed by any valid statement to log the statement to the browser's console.
+
+Example:
+
+* puts "Rails is awesome!"
+* puts this
+
+
+ 
