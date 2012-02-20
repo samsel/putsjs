@@ -1,22 +1,14 @@
-require 'tilt'
-require 'execjs'
+class PutsJSProcessor < Tilt::Template
 
-module Putsjs
-  module Rails
-    class PutsJSProcessor < ::Tilt::Template
+  def prepare; end
 
-      def self.default_mime_type
-        'application/javascript'
-      end
-
-      def prepare
-      end
-
-      def evaluate(scope, locals, &block)
-        puts "halo--evaluate"
-      end
+  def evaluate(context, locals, &block)
+    modified_data = ""
+    data.lines.each do |line|
+      new_line = line.gsub!("puts", "console.log")
+      modified_data = (new_line.nil? ? (modified_data + line) : (modified_data + new_line))       
     end
+    
+    modified_data
   end
 end
-
-
