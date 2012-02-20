@@ -20,4 +20,7 @@ Gem::Specification.new do |s|
   
   s.add_runtime_dependency 'coffee-script', '>= 2.2.0'
   s.add_runtime_dependency 'railties',      '~> 3.2.0'
+  s.add_dependency('tilt')
+  s.add_dependency('execjs')
+  
 end

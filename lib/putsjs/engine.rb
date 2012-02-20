@@ -1,7 +1,11 @@
 require 'putsjs/engine'
 
 module Putsjs
-  class Engine < ::Rails::Engine
-    puts "\n\n\n\n\n\n\n Haloooooo \n\n\n\n\n\n"
+  module Rails
+    class Engine < ::Rails::Engine
+      initializer :register_putsjs do |app|
+        app.assets.register_engine '.coffee', PutsJSProcessor
+      end
+    end    
   end
 end
