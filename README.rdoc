@@ -1,6 +1,9 @@
 == PutsJS
 
-Add PutsJS to your Rails project to freely use 'puts' instead of typing the lengthy 'console.log' for logging to console in your coffescript.
+Love Ruby's 'puts' syntax? 
+Hate typing 'console.log' everytime you want to print something to the web-browser's console from your Coffecript? 
+Then use putsjs in your rails application. 
+putsjs is a simple gem that allows browser console logging statements to be written as puts statements in your coffescript files and during asset compilation converts them into console.log statements.
 
 
 == Installation
