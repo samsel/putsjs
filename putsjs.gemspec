@@ -8,8 +8,8 @@ Gem::Specification.new do |s|
   s.authors     = ["Samuel Selvanathan"]
   s.email       = ["sjasel@gmail.com"]
   s.homepage    = ""
-  s.summary     = %q{Use puts instead of typing console.log for logging to console in your coffescript}
-  s.description = %q{love puts? and hate typing console.log everytimne you want to print something to the console in you Coffecript. Use putsjs. putsjs converts puts statements into console.log statements in you coffeescript.}
+  s.summary     = %q{Ruby style puts instead of console.log for logging to console from coffescript}
+  s.description = %q{Love Ruby's 'puts' syntax? and hate typing console.log everytime you want to print something to the web-browser console from you Coffecript? Then use 'putsjs'. putsjs allows console logging statements to be written as puts statements and during asset compilation converts them into console.log statements in you coffeescript.}
 
   s.rubyforge_project = "putsjs"
 
